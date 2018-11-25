@@ -26,7 +26,7 @@ The general steps are:
 
 ## Code your Webapp
 1. Create your Webapp as normal, in this case we'll use a generic Vaadin application quickstart webapp
-2. Maven new project: **mvn archetype:generate -DarchetypeArtifactId="vaadin-archetype-application" -DarchetypeGroupId="com.vaadin"**
+2. Maven new project: Open Command Palette and start a Maven Archetype, then select the Vaadin template.
 3. 'groupId': **ie.examples**
 4. 'artifactId': **VaadinGenericApp**
 5. Build your app with Maven Install, test it with Jetty on localhost
