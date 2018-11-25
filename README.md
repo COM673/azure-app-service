@@ -15,9 +15,8 @@ The general steps are:
     2. Ensure subscription is **Azure for Students**
     3. Create a new resource group (use a similar name so you know they are related)
     4. Select **Windows** (not because I work in Microsoft, but because you want to use Java/Jetty, and the Linux and Docker containers won't let you configure that as easily!)
-    5. Select a new App Service Plan (give it a name, select **North Europe** as the location and Pricing tier of **F1 Free**)
-    6. Leave **Application Insights** *off*
-    7. Pin to Dashboard and **Create**
+    5. Leave **Application Insights** *off*
+    6. Pin to Dashboard and **Create**
 
 ## Configure the Azure App Service for Java and Jetty
 1. In your app dashboard, go to **Settings** - **Application Settings**
@@ -51,6 +50,8 @@ If you want to use a dedicated FTP client you can, if you have a recent version 
 2.  Paste **FTP hostname** into the address bar (in my case it was **ftp://waws-prod-db3-095.ftp.azurewebsites.windows.net**)
 3.  It should prompt you for the FTP username and password you set above
 4.  Navigate to **site - wwwroot - webapps** and drop/paste/copy **ROOT.war** into that folder (you renamed your .war file in the previous section)
-5.  Wait for it to finish copying and close the window
+5. If the file will not copy over easily, try stoping the web app in the portal first.
+6.  Wait for it to finish copying and close the window
+7.  Restart your app if you had stopped it.
 
 Now you should be able to visit the app name (something.azurewebsites.net) and see your app running. If you don't immediately, give it a few seconds to reload...
